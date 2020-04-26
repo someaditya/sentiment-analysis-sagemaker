@@ -1,5 +1,35 @@
 # Sentiment Analysis - SageMaker Deployment Project
 
-The notebook and Python files provided here, once completed, result in a simple web app which interacts with a deployed recurrent neural network performing sentiment analysis on movie reviews. This project assumes some familiarity with SageMaker, the mini-project, Sentiment Analysis using XGBoost, should provide enough background.
+This repository contains code and associated files for deploying a Sentiment Analysis Web App using AWS SageMaker. This project is part of Udacity's Machine Learning Nanodegree.
+ 
+## Project Overview
+
+In this project, the task is to build a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text. Detecting plagiarism is an active area of research; the task is non-trivial and the differences between paraphrased answers and original work are often not so obvious.
+
+This project will be broken down into three main notebooks:
+
+**Notebook 1: Data Exploration**
+* Load in the corpus of plagiarism text data.
+* Explore the existing data features and the data distribution.
+
+
+**Notebook 2: Feature Engineering**
+
+* Clean and pre-process the text data.
+* Define features for comparing the similarity of an answer text and a source text, and extract similarity features.
+* Select "good" features, by analyzing the correlations between different features.
+* Create train/test `.csv` files that hold the relevant features and class labels for train/test data points.
+
+**Notebook 3: Train and Deploy Your Model in SageMaker**
+
+* Upload train/test feature data to S3.
+* Define a binary classification model and a training script.
+* Train the model and deploy it using SageMaker.
+* Evaluate the deployed classifier.
+
+---
+
+Please see the [README](https://github.com/udacity/ML_SageMaker_Studies/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
+
 
 Please see the [README](https://github.com/udacity/sagemaker-deployment/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
